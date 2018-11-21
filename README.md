@@ -55,7 +55,7 @@ Here some images of the wires:
 
 ![Loop](images/loop.png)
 
-Since quiver3D seems not to be implemented in matplotlib3D I haven’t added it yet in the scripts. It seems to be implemented in Mayavi but I had some difficulties importing it in Eclipse. So I simply plotted the absolute value of the norm of B against distance for the wire and the loop, and calculated the RMSE for every test. Now the 4 cases described;
+Since quiver3D seems not to be implemented in matplotlib3D I haven’t added it yet in the scripts. So I simply plotted the absolute value of the norm of B against distance for the wire and the loop, and calculated the RMSE for every test. Now the 4 cases described;
 
 For a straight long wire carrying a current I at a distance r from the wire the B field will have only one component on the azimuth i.e.:
 
