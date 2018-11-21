@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-from numpy import cross,zeros,pi,array,linalg
+from numpy import cross,zeros,pi,array,linalg,complex_
 import Discretizer
 
 class BSSolver(object):
@@ -36,7 +36,7 @@ class BSSolver(object):
         Solves the B field at points points for a given wire myWire discretized uniformly
         at a length dL
         '''
-        B = zeros((len(points[0]),3))
+        B = zeros((len(points[0]),3),dtype=complex_)
         Discr = Discretizer.Discretizer()
         
         for i in range (0, int(len(myWire.coordz[0]))-1):

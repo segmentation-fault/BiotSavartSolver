@@ -123,7 +123,7 @@ class Wire:
         '''
         
         #If an origin is not specified, the last vertex is assumed as origin
-        if Origin != None:
+        if not Origin is None:
             newWire = self.__Create_Wire(Origin, Theta, Phi, length)
         else:
             temp = array(self.coordz)
